@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stickser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stickser.css">    
+</head>
+<body>
+    <h2 id="stkTitle" class="title">Stickser</h2>
+    <div id="stkSelect" class="stickser-select">
+        
+    </div>
+    <div>
+        <h2 id="customBtn" class="custom-stickser title">Custom Stickser</h2>
+        <div id="customField" class="input-stickser">
+            <p>Paste the link of the image (.png or .gif)</p>
+            <input id="urlImg" class="textField" type="text">
+            <input id="customStk" class="submitBtn" type="button" value="Submit">
+        </div>
+    </div>
+    <h2 id="posTitle" class="title">Position</h2>
+
+    <div id="posField" class="position">
+        <div class="axis">
+            <p>Horizontal</p>
+            <input id="axisX" class="axisField" type="number" placeholder="Pixels">
+        </div>
+        <div class="axis">
+            <p>Vertical</p>
+            <input id="axisY" class="axisField" type="number" placeholder="Pixels">
+        </div>
+        <input id="ajust" class="ajust" type="button" value="Ajust">
+    </div>
+    <script src="stickser.js"></script>
+</body>
+</html>

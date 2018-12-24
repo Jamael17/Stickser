@@ -1,0 +1,17 @@
+{
+    "name": "Stickser (BETA)",
+    "version": "0.1",
+    "author":"@Jamaeltwt",
+    "description": "A sticker in your browser! With only the link of the image you can have a stickser; PNG, GIF or JPG",
+    "manifest_version": 2,
+    "icons": {"128": "icon_128.png"},
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+    "browser_action":{
+        "default_popup":"stickser.html"
+        
+    },
+    "permissions":["tabs", "storage"]
+}
