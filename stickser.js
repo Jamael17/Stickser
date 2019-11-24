@@ -13,29 +13,10 @@ fetch('https://jcurvelo.github.io/gifs-in-json/collection.json')
 .then(jsonData=>{
     for (const key in jsonData) {
         if (jsonData.hasOwnProperty(key)) {
-            console.log(`${key}: ${jsonData[key]}`)
             localStorage.setItem(`imgKey_${key}`,jsonData[key]);
         }
     }
 });
-// request.open('GET', 'https://jcurvelo.github.io/gifs-in-json/collection.json', true);
-
-// request.onload = function(){
-//     var data = JSON.parse(this.response);
-
-//     var keys = Object.keys(data);
-//     var values = Object.values(data);
-//     var valuesArr = [];
-
-//     for(let i=0;i<values.length;i++){
-//         valuesArr[i] = values[i]
-//     }
-    
-//     for(let i=0; i<keys.length;i++){
-//         localStorage.setItem(`imgKey_${i}`,values[i]);
-//     }
-// }
-// request.send();
 
 let storage = Object.keys(localStorage);
 let customStk = document.getElementById('customStk');
