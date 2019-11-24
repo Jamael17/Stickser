@@ -27,15 +27,15 @@ chrome.runtime.onConnect.addListener(function(port){
 });
 
 //Getting a connection with the API
-const request = new XMLHttpRequest();
+// const request = new XMLHttpRequest();
 
-request.open('GET', 'https://jamael17.github.io/gifs-in-json/collection.json', true);
+// request.open('GET', 'https://jcurvelo.github.io/gifs-in-json/collection.json', true);
 
-request.onload = function(){
-    let data = JSON.parse(this.response);   
-}
+// request.onload = function(){
+//     let data = JSON.parse(this.response);   
+// }
 
-request.send();
+// request.send();
 
 //Creating the Stickser
 let stickser = document.createElement('div');
